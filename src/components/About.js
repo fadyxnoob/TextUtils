@@ -3,25 +3,25 @@ import React, { useState } from "react";
 export default function About(props) {
     return (
         <div className="container-fluid p-3 rounded border">
-            <h1 className={`text-center text-${props.mode === 'dark' ? 'light' : 'dark'}`}>About Us</h1>
-            <div className={`accordion text-${props.mode === 'dark' ? 'light' : 'dark'}`} id="accordionExample">
-                <div className={`accordion-item bg-${props.mode} text-${props.mode === 'dark' ? 'light' : 'dark'}`}>
-                    <h2 className={`accordion-header bg-${props.mode} text-${props.mode === 'dark' ? 'light' : 'dark'}`}>
-                        <button className={`accordion-button collapsed bg-${props.mode} text-${props.mode === 'dark' ? 'light' : 'dark'}`} type="button" data-bs-toggle="collapse"
+            <h1 className={`text-center text-${props.mode === 'black' ? 'white' : 'black'}`}>About Us</h1>
+            <div className={`accordion text-${props.mode === 'black' ? 'white' : 'black'}`} id="accordionExample">
+                <div className={`accordion-item bg-${props.mode} text-${props.mode === 'black' ? 'white' : 'black'}`}>
+                    <h2 className={`accordion-header bg-${props.mode} text-${props.mode === 'black' ? 'white' : 'black'}`}>
+                        <button className={`accordion-button collapsed bg-${props.mode} text-${props.mode === 'black' ? 'white' : 'black'}`} type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
                             Discover Our Vision
                         </button>
                     </h2>
                     <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample"
                     >
-                        <div className={`accordion-body bg-${props.mode} text-${props.mode==='dark'?'light':'dark'}`} >
+                        <div className={`accordion-body bg-${props.mode} text-${props.mode==='black'?'white':'black'}`} >
                             Embark on a journey with us as we share our visionary insights and goals. In this section, we illuminate our aspirations, guiding principles, and the path we envision for the future. Uncover the essence of our mission and how it shapes every aspect of our endeavors.
                         </div>
                     </div>
                 </div>
-                <div className={`accordion-item bg-${props.mode} text-${props.mode === 'dark' ? 'light' : 'dark'}`}>
-                    <h2 className={`accordion-header bg-${props.mode} text-${props.mode === 'dark' ? 'light' : 'dark'}`}>
-                        <button className={`accordion-button collapsed bg-${props.mode} text-${props.mode === 'dark' ? 'light' : 'dark'}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <div className={`accordion-item bg-${props.mode} text-${props.mode === 'black' ? 'white' : 'black'}`}>
+                    <h2 className={`accordion-header bg-${props.mode} text-${props.mode === 'black' ? 'white' : 'black'}`}>
+                        <button className={`accordion-button collapsed bg-${props.mode} text-${props.mode === 'black' ? 'white' : 'black'}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             Unveiling Innovation
                         </button>
                     </h2>
@@ -35,10 +35,10 @@ export default function About(props) {
                         </div>
                     </div>
                 </div>
-                <div className={`accordion-item bg-${props.mode} text-${props.mode === 'dark' ? 'light' : 'dark'}`}>
-                    <h2 className={`accordion-header bg-${props.mode} text-${props.mode === 'dark' ? 'light' : 'dark'}`}>
+                <div className={`accordion-item bg-${props.mode} text-${props.mode === 'black' ? 'white' : 'black'}`}>
+                    <h2 className={`accordion-header bg-${props.mode} text-${props.mode === 'black' ? 'white' : 'black'}`}>
                         <button
-                            className={`accordion-button bg-${props.mode} text-${props.mode === 'dark' ? 'light' : 'dark'} collapsed`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            className={`accordion-button bg-${props.mode} text-${props.mode === 'black' ? 'white' : 'black'} collapsed`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             Our Commitment to Excellence
                         </button>
                     </h2>
