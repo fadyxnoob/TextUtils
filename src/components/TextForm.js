@@ -42,7 +42,7 @@ export default function TextForm(props) {
       </div>
       <div className="container my-2">
         <h3  className={`text-${props.mode==='white'?'black':'white'}`}>Your text summary</h3>
-        <p  className={`text-${props.mode==='white'?'black':'white'}`}>{text.split(" ").filter((e)=>{return e.length!==0}).length} words and {text.length} characters</p>
+        <p  className={`text-${props.mode==='white'?'black':'white'}`}>{text.split(/\s+/).filter((e)=>{return e.length!==0}).length} words and {text.length} characters</p>
         <p  className={`text-${props.mode==='white'?'black':'white'}`}>{0.004 * text.split(" ").filter((e)=>{return e.length!==0}).length} Minutes to Read</p>
         <h2  className={`text-${props.mode==='white'?'black':'white'}`}>Preview</h2>
         <p  className={`px-2 py-2 border border-${props.mode==='white'?'black':'white'} text-${props.mode==='white'?'black':'white'}`}>{text=== ''?'Nothing to Preview':text}</p>

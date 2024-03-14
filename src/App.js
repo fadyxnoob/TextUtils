@@ -1,3 +1,4 @@
+import './App.css';
 import React, { useState } from "react";
 import About from './components/About';
 import Navbar from './components/Navbar';
@@ -8,6 +9,7 @@ import {
   Route
 } from "react-router-dom";
 import Alert from "./components/Alert";
+
 
 function App() {
   const [mode, setMode] = useState('white');
